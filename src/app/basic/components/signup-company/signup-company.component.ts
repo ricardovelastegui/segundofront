@@ -34,7 +34,7 @@ export class SignupCompanyComponent {
   submitForm() {
 
     this.authService.registerCompany(this. validateForm.value).subscribe( res =>{
-      this.notification.success(
+      this.notification.success(  
         'SUCCESS',
         'Signup successfull',
         { nzDuration: 3000}
